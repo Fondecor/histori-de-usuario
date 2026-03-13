@@ -1,0 +1,50 @@
+#Este programa solicita al usuario el nombre, precio y cantidad de un producto,
+# valida los datos numéricos, calcula el costo total y muestra los resultados.
+
+# Declarar variables iniciales
+nombre = ""
+precio = 0.0
+cantidad = 0
+
+# --- Entrada de datos (variables en Python) ---
+
+# Solicitar el nombre del producto
+nombre = input("Ingrese el nombre del producto: ")
+
+# Solicitar el precio del producto y validar que sea un número flotante
+while True:
+    try:
+        precio_str = input("Ingrese el precio unitario del producto: ")
+        precio = float(precio_str)
+        if precio <= 0:
+            print("Error: El precio debe ser un número positivo. Intente de nuevo.")
+        else:
+            break  # Salir del bucle si el precio es válido
+    except ValueError:
+        print("Error: Entrada inválida. Por favor, ingrese un número para el precio.")
+
+# Solicitar la cantidad del producto y validar que sea un número entero
+while True:
+    try:
+        cantidad_str = input("Ingrese la cantidad del producto: ")
+        cantidad = int(cantidad_str)
+        if cantidad <= 0:
+            print("Error: La cantidad debe ser un número entero positivo. Intente de nuevo.")
+        else:
+            break  # Salir del bucle si la cantidad es válida
+    except ValueError:
+        print("Error: Entrada inválida. Por favor, ingrese un número entero para la cantidad.")
+
+# --- Operación matemática (costo total) ---
+
+# Calcular el costo total
+costo_total = precio * cantidad
+
+# --- Mostrar resultados en consola ---
+
+# Mostrar el resumen del producto y el costo total
+print(f"Producto: {nombre} | Precio: {precio} | Cantidad: {cantidad} | Total: {costo_total}")
+
+# Este programa permite al usuario introducir información sobre un producto (nombre, precio, cantidad),
+# valida que el precio y la cantidad sean números válidos y positivos, calcula el costo total
+# y luego presenta un resumen de la información ingresada y el costo total.#
