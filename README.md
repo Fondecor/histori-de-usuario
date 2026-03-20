@@ -1,62 +1,88 @@
-# histori-de-usuari
-Inventario.py - Programa de Gestión Básica de Productos
+Sistema de Gestión de Inventario 📦
  
+Sistema básico desarrollado en Python para administrar un inventario de productos, con funcionalidades para agregar elementos, visualizar la información y calcular estadísticas. Cuenta con validaciones de entrada de datos y una estructura modularizada y documentada.
+ 
+🚀 Características
+ 
+- Agregar productos: Registra nuevos elementos con nombre, precio y cantidad, validando que los valores numéricos sean positivos y correctos.
+- Mostrar inventario: Visualiza todos los productos almacenados de forma clara y ordenada.
+- Calcular estadísticas: Obtiene el valor total del inventario y la cantidad total de unidades registradas.
+- Manejo de errores: Gestiona entradas inválidas y muestra mensajes informativos para guiar al usuario.
+- Interfaz intuitiva: Menú interactivo que facilita la navegación por las funcionalidades del sistema.
+ 
+📋 Requisitos
+ 
+- Python 3.x (versión recomendada: 3.8 o superior)
+- No requiere librerías externas, funciona con módulos integrados en el lenguaje.
+ 
+🛠️ Uso
+ 
+1. Clona el repositorio o descarga el archivo del código:
+bash
+  
+git clone https://github.com/tu-usuario/sistema-gestion-inventario.git
+cd sistema-gestion-inventario
  
- 
-Descripción
- 
-Este script en Python permite al usuario ingresar información de un producto (nombre, precio unitario y cantidad), valida que los datos numéricos sean positivos y de tipo correcto, calcula el costo total y muestra un resumen de la información.
- 
- 
- 
-Características
- 
-- Solicita el nombre del producto como texto.
-- Valida que el precio sea un número flotante positivo.
-- Valida que la cantidad sea un número entero positivo.
-- Calcula el costo total como el producto de precio y cantidad.
-- Muestra un resumen claro de los datos ingresados y el total calculado.
- 
- 
- 
-Cómo Usar
- 
-1. Asegúrate de tener Python instalado en tu sistema (versión 3.x recomendada).
-2. Descarga el archivo  inventario.py .
-3. Abre una terminal o consola y navega hasta el directorio donde se encuentra el archivo.
-4. Ejecuta el script con el comando:
+2. Ejecuta el programa desde la terminal o consola:
 bash
   
 python inventario.py
  
-5. Sigue las instrucciones en pantalla para ingresar los datos del producto:
-- Ingresa el nombre del producto cuando se solicite.
-- Ingresa el precio unitario (debe ser un número positivo; si ingresas texto o un valor negativo, se pedirá nuevamente).
-- Ingresa la cantidad (debe ser un número entero positivo; se validará igual que el precio).
-6. Una vez ingresados los datos válidos, se mostrará el resumen con el costo total.
+3. Sigue las instrucciones del menú interactivo:
+- Selecciona la opción  1  para agregar nuevos productos.
+- Selecciona la opción  2  para ver el inventario completo.
+- Selecciona la opción  3  para consultar las estadísticas del inventario.
+- Selecciona la opción  4  para salir del sistema.
  
- 
- 
-Ejemplo de Ejecución
+Ejemplo de funcionamiento
  
 plaintext
   
+=== Sistema de Gestión de Inventario ===
+Seleccione una acción:
+1. Agregar producto
+2. Mostrar inventario
+3. Calcular estadísticas
+4. Salir
+Ingrese el número de la opción deseada: 1
+
+--- Agregar Nuevo Producto ---
 Ingrese el nombre del producto: Laptop
-Ingrese el precio unitario del producto: 899.99
-Ingrese la cantidad del producto: 3
-Producto: Laptop | Precio: 899.99 | Cantidad: 3 | Total: 2699.97
+Ingrese el precio del producto: 899.99
+Ingrese la cantidad del producto: 5
+Producto 'Laptop' agregado exitosamente!
+
+Seleccione una acción:
+...
  
  
- 
+📂 Estructura del código
  
-Estructura del Código
+Elemento Descripción 
+ inventario  Lista global que almacena cada producto como un diccionario con sus datos. 
+ agregar_producto()  Función que solicita y valida los datos de un producto para agregarlo al inventario. 
+ mostrar_inventario()  Función que recorre la lista y muestra todos los productos registrados. 
+ calcular_estadisticas()  Calcula y muestra el valor total del inventario y la cantidad total de unidades. 
+ main()  Función principal que gestiona el menú y el flujo de ejecución del programa. 
  
-- Entrada de datos: Se solicitan los valores al usuario con validaciones para asegurar su corrección.
-- Operación matemática: Se calcula el costo total multiplicando precio y cantidad.
-- Salida de resultados: Se muestra un resumen formateado en la consola.
+El código cuenta con documentación interna (docstrings) que explica el propósito y funcionamiento de cada función.
  
- 
+📝 Objetivo del proyecto
  
-Licencia
+Desarrollar un sistema práctico que integre conceptos fundamentales de Python:
  
-Este proyecto es de uso libre, puedes modificarlo y distribuirlo según tus necesidades.
+- Estructuras de control (condicionales y bucles)
+- Almacenamiento de datos con listas y diccionarios
+- Modularización del código mediante funciones
+- Validación y manejo de entradas de usuario
+- Documentación clara del código
+ 
+🤝 Contribuciones
+ 
+Las contribuciones son bienvenidas. Si deseas mejorar el sistema, agregar funcionalidades o corregir errores, por favor abre un issue o envía un pull request con tus cambios.
+ 
+📄 Licencia
+ 
+Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo  LICENSE  para más detalles.
+ 
+¿Te gustaría que agregue una sección de funcionalidades futuras o ejemplos de posibles mejoras al README?
