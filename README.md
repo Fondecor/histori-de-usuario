@@ -1,4 +1,4 @@
-# histori-de-usuario
+# histori-de-usuari
 Inventario.py - Programa de Gestión Básica de Productos
  
  
